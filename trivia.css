@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 500px;
+    height: 310px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+
+button {
+    border: 0px solid #fff;
+    background-color: rgb(0, 0, 0, 0);
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.element-choice {
+    width: 125px;
+    height: 125px;
+    padding: 4px;
+    position: relative;
+}
+
+.gas {
+    border: 8px solid #f55;
+}
+
+.gas:hover {
+    border: 8px solid #f30;
+}
+
+.gas::after {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #f55;
+    width: 125px;
+    height: 125px;
+    padding: 4px;
+    content: 'Gas';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.liquid {
+    border: 8px solid #5f5;
+}
+
+.liquid:hover {
+    border: 8px solid #0f0;
+}
+
+.liquid::after {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #5f5;
+    width: 125px;
+    height: 125px;
+    padding: 4px;
+    content: 'Liquid';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.solid {
+    border: 8px solid #0cf;
+}
+
+.solid:hover {
+    border: 8px solid #0af;
+}
+
+.solid::after {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #0cf;
+    width: 125px;
+    height: 125px;
+    padding: 4px;
+    content: 'Solid';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
