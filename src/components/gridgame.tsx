@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/gridgame.css';
+import styles from '../styles/gridgame.module.css';
 import elements from '../assets/elements.tsx';
 
 const allElements = Object.values(elements);
@@ -18,7 +18,8 @@ function capitalizeWord(e: string) {
 }
 
 function subSpace(e: string) {
-    return e.replaceAll(' ', '-');
+    let replacement = e.replaceAll(' ', '');
+    return replacement.replaceAll('-', '');
 }
 
 function setAnswer(e: number) {
@@ -222,91 +223,91 @@ const GridGame = () => {
     }
 
     return (
-        <>
-            <div id="question">Which symbol belongs to the element <span style={{fontWeight: 'bold', color: 'yellow'}}>{questionElement}</span>?</div>
-            <div id="elements">
-                <div className={`element-container ${oneStyle} ${infoDisplay}`}>
-                    <div className='element-info'>
-                        <div className="energy-level">{eLOne}</div>
-                        <div className="symbol">{symbolOne}</div>
-                        <div className="name">{nameOne}</div>
-                        <div className="weight">{weightOne}</div>
-                        <div className="state-group">
-                            <div className="state">{stateOne}</div>
-                            <div className="group">{groupOne}</div>
+        <div id={styles.container}>
+            <div id={styles.question}>Which symbol belongs to the element <span style={{fontWeight: 'bold', color: 'yellow'}}>{questionElement}</span>?</div>
+            <div id={styles.elements}>
+                <div className={`${styles.elementcontainer} ${styles[oneStyle]} ${styles[infoDisplay]}`}>
+                    <div className={styles.elementinfo}>
+                        <div className={styles.energylevel}>{eLOne}</div>
+                        <div className={styles.symbol}>{symbolOne}</div>
+                        <div className={styles.name}>{nameOne}</div>
+                        <div className={styles.weight}>{weightOne}</div>
+                        <div className={styles.stategroup}>
+                            <div className={styles.state}>{stateOne}</div>
+                            <div className={styles.group}>{groupOne}</div>
                         </div>
                     </div>
-                    <button id="button-one" className={`element-button ${buttonDisplay}`} onClick={() => {checkAnswer(symbolOne, 'button-one')}} disabled={oneDisabled}>{symbolOne}</button>
+                    <button className={`${styles.elementbutton} ${styles[buttonDisplay]}`} onClick={() => {checkAnswer(symbolOne, 'button-one')}} disabled={oneDisabled}>{symbolOne}</button>
                 </div>
-                <div className={`element-container ${twoStyle} ${infoDisplay}`}>
-                    <div className="element-info">
-                        <div className="energy-level">{eLTwo}</div>
-                        <div className="symbol">{symbolTwo}</div>
-                        <div className="name">{nameTwo}</div>
-                        <div className="weight">{weightTwo}</div>
-                        <div className="state-group">
-                            <div className="state">{stateTwo}</div>
-                            <div className="group">{groupTwo}</div>
+                <div className={`${styles.elementcontainer} ${styles[twoStyle]} ${styles[infoDisplay]}`}>
+                    <div className={styles.elementinfo}>
+                        <div className={styles.energylevel}>{eLTwo}</div>
+                        <div className={styles.symbol}>{symbolTwo}</div>
+                        <div className={styles.name}>{nameTwo}</div>
+                        <div className={styles.weight}>{weightTwo}</div>
+                        <div className={styles.stategroup}>
+                            <div className={styles.state}>{stateTwo}</div>
+                            <div className={styles.group}>{groupTwo}</div>
                         </div>
                     </div>
-                    <button id="button-two" className={`element-button ${buttonDisplay}`} onClick={() => {checkAnswer(symbolTwo, 'button-two')}} disabled={twoDisabled}>{symbolTwo}</button>
+                    <button id="button-two" className={`${styles.elementbutton} ${styles[buttonDisplay]}`} onClick={() => {checkAnswer(symbolTwo, 'button-two')}} disabled={twoDisabled}>{symbolTwo}</button>
                 </div>
-                <div className={`element-container ${threeStyle} ${infoDisplay}`}>
-                    <div className="element-info">
-                        <div className="energy-level">{eLThree}</div>
-                        <div className="symbol">{symbolThree}</div>
-                        <div className="name">{nameThree}</div>
-                        <div className="weight">{weightThree}</div>
-                        <div className="state-group">
-                            <div className="state">{stateThree}</div>
-                            <div className="group">{groupThree}</div>
+                <div className={`${styles.elementcontainer} ${styles[threeStyle]} ${styles[infoDisplay]}`}>
+                    <div className={styles.elementinfo}>
+                        <div className={styles.energylevel}>{eLThree}</div>
+                        <div className={styles.symbol}>{symbolThree}</div>
+                        <div className={styles.name}>{nameThree}</div>
+                        <div className={styles.weight}>{weightThree}</div>
+                        <div className={styles.stategroup}>
+                            <div className={styles.state}>{stateThree}</div>
+                            <div className={styles.group}>{groupThree}</div>
                         </div>
                     </div>
-                    <button id="button-three" className={`element-button ${buttonDisplay}`} onClick={() => {checkAnswer(symbolThree, 'button-three')}} disabled={threeDisabled}>{symbolThree}</button>
+                    <button className={`${styles.elementbutton} ${styles[buttonDisplay]}`} onClick={() => {checkAnswer(symbolThree, 'button-three')}} disabled={threeDisabled}>{symbolThree}</button>
                 </div>
-                <div className={`element-container ${fourStyle} ${infoDisplay}`}>
-                    <div className="element-info">
-                        <div className="energy-level">{eLFour}</div>
-                        <div className="symbol">{symbolFour}</div>
-                        <div className="name">{nameFour}</div>
-                        <div className="weight">{weightFour}</div>
-                        <div className="state-group">
-                            <div className="state">{stateFour}</div>
-                            <div className="group">{groupFour}</div>
+                <div className={`${styles.elementcontainer} ${styles[fourStyle]} ${styles[infoDisplay]}`}>
+                    <div className={styles.elementinfo}>
+                        <div className={styles.energylevel}>{eLFour}</div>
+                        <div className={styles.symbol}>{symbolFour}</div>
+                        <div className={styles.name}>{nameFour}</div>
+                        <div className={styles.weight}>{weightFour}</div>
+                        <div className={styles.stategroup}>
+                            <div className={styles.state}>{stateFour}</div>
+                            <div className={styles.group}>{groupFour}</div>
                         </div>
                     </div>
-                    <button id="button-four" className={`element-button ${buttonDisplay}`} onClick={() => {checkAnswer(symbolFour, 'button-four')}} disabled={fourDisabled}>{symbolFour}</button>
+                    <button className={`${styles.elementbutton} ${styles[buttonDisplay]}`} onClick={() => {checkAnswer(symbolFour, 'button-four')}} disabled={fourDisabled}>{symbolFour}</button>
                 </div>
-                <div className={`element-container ${fiveStyle} ${infoDisplay}`}>
-                    <div className="element-info">
-                        <div className="energy-level">{eLFive}</div>
-                        <div className="symbol">{symbolFive}</div>
-                        <div className="name">{nameFive}</div>
-                        <div className="weight">{weightFive}</div>
-                        <div className="state-group">
-                            <div className="state">{stateFive}</div>
-                            <div className="group">{groupFive}</div>
+                <div className={`${styles.elementcontainer} ${styles[fiveStyle]} ${styles[infoDisplay]}`}>
+                    <div className={styles.elementinfo}>
+                        <div className={styles.energylevel}>{eLFive}</div>
+                        <div className={styles.symbol}>{symbolFive}</div>
+                        <div className={styles.name}>{nameFive}</div>
+                        <div className={styles.weight}>{weightFive}</div>
+                        <div className={styles.stategroup}>
+                            <div className={styles.state}>{stateFive}</div>
+                            <div className={styles.group}>{groupFive}</div>
                         </div>
                     </div>
-                    <button id="button-five" className={`element-button ${buttonDisplay}`} onClick={() => {checkAnswer(symbolFive, 'button-five')}} disabled={fiveDisabled}>{symbolFive}</button>
+                    <button className={`${styles.elementbutton} ${styles[buttonDisplay]}`} onClick={() => {checkAnswer(symbolFive, 'button-five')}} disabled={fiveDisabled}>{symbolFive}</button>
                 </div>
-                <div className={`element-container ${sixStyle} ${infoDisplay}`}>
-                    <div className="element-info">
-                        <div className="energy-level">{eLSix}</div>
-                        <div className="symbol">{symbolSix}</div>
-                        <div className="name">{nameSix}</div>
-                        <div className="weight">{weightSix}</div>
-                        <div className="state-group">
-                            <div className="state">{stateSix}</div>
-                            <div className="group">{groupSix}</div>
+                <div className={`${styles.elementcontainer} ${styles[sixStyle]} ${styles[infoDisplay]}`}>
+                    <div className={styles.elementinfo}>
+                        <div className={styles.energylevel}>{eLSix}</div>
+                        <div className={styles.symbol}>{symbolSix}</div>
+                        <div className={styles.name}>{nameSix}</div>
+                        <div className={styles.weight}>{weightSix}</div>
+                        <div className={styles.stategroup}>
+                            <div className={styles.state}>{stateSix}</div>
+                            <div className={styles.group}>{groupSix}</div>
                         </div>
                     </div>
-                    <button id="button-six" className={`element-button ${buttonDisplay}`} onClick={() => {checkAnswer(symbolSix, 'button-six')}} disabled={sixDisabled}>{symbolSix}</button>
+                    <button className={`${styles.elementbutton} ${styles[buttonDisplay]}`} onClick={() => {checkAnswer(symbolSix, 'button-six')}} disabled={sixDisabled}>{symbolSix}</button>
                 </div>               
             </div>
-            <button id="generate-button" style={ winCheck ? { visibility: 'visible' } : { visibility: 'hidden' } } onClick={setElements}>Play Again</button>
-            <div id="streak">Streak: {streak}</div>
-        </>
+            <button id={styles.generatebutton} style={ winCheck ? { visibility: 'visible' } : { visibility: 'hidden' } } onClick={setElements}>Play Again</button>
+            <div id={styles.streak}>Streak: {streak}</div>
+        </div>
     )
 }
 

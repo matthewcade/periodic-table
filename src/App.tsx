@@ -1,16 +1,9 @@
-import './App.css'
-import GridGame from './components/gridgame.tsx';
-import Logo from './images/logo.png';
+import Navigation from './components/navigation.tsx';
 
 function App() {
   return (
-    <>
-      <header>
-        <img src={Logo} width="200px" />
-      </header>
-      <GridGame />
-    </>
+    <Navigation />
   )
 }
 
-export default App
+export default App;
