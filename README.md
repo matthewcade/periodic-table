@@ -10,8 +10,10 @@ The [Periodic Table] screen is designed to make studying the elements simple. Ea
 
 The [Grid Game] screen gives you the name of an element with six clickable element symbols. The goal is to choose the correct symbol for the given element. Do it on the first try to increase your answer streak.
 
+## Match Game
+The [Match Game] screen gives you a list of eight elements and eight symbols. The objective is to match the correct symbol and element pairs.
+
 ### Coming Soon
 
-- Screen: Multiple choice memory game
 - Enhancement: Hide elements on the periodic table by group category
 - Enhancement: Difficulty for the grid game
