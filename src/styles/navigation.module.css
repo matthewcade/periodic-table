@@ -47,6 +47,11 @@ button {
     background-color: #ffff00;
 }
 
+#matchgamebutton {
+    color: #000;
+    background-color: #44ff00;
+}
+
 @media screen and (max-width: 500px) {
     #content {
         flex-flow: column nowrap;

@@ -135,24 +135,8 @@ const PeriodicTable = () => {
         });
     }
 
-    //Shows/hides the element group
-    function switchAlkaliMetals() {
-        const alkaliElements = document.querySelectorAll(styles.alkalimetal);
-
-        alkaliElements.forEach((el) => {
-            if(el.classList.contains(styles.hideButton)) {
-                el.classList.remove(styles.hideButton);
-                el.classList.add(styles.showButton);
-            } else {
-                el.classList.remove(styles.showButton);
-                el.classList.add(styles.hideButton);
-            }
-        });
-    }
-
     const showButton = <button key='showbutton' id={styles.showallbutton} onClick={() => {showAll()}}>Show All</button>
     const hideButton = <button key='hidebutton'id={styles.hideallbutton} onClick={() => {hideAll()}}>Hide All</button>
-    const alkaliButton = <button key='alkalibutton' id={styles.alkalibutton} onClick={() => {switchAlkaliMetals}}>Alkali Metals</button>
 
     return (
         <div id={styles.container}>
@@ -163,7 +147,6 @@ const PeriodicTable = () => {
             <div id={styles.revealbuttons}>
                 {showButton}
                 {hideButton}
-                {alkaliButton}
             </div>
         </div>
     );

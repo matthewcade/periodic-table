@@ -1,6 +1,6 @@
 let elements = {
     hydrogen: {
-        name: 'hydrogen',
+        name: 'Hydrogen',
         symbol: 'H',
         state: 'gas',
         group: 'reactive nonmetal',
@@ -8,7 +8,7 @@ let elements = {
         energyLevels: ['1']
     },
     helium: {
-        name: 'helium',
+        name: 'Helium',
         symbol: 'He',
         state: 'gas',
         group: 'noble gas',
@@ -16,7 +16,7 @@ let elements = {
         energyLevels: ['2']
     },
     lithium: {
-        name: 'lithium',
+        name: 'Lithium',
         symbol: 'Li',
         state: 'solid',
         group: 'alkali metal',
@@ -24,7 +24,7 @@ let elements = {
         energyLevels: ['2', '1']
     },
     beryllium: {
-        name: 'beryllium',
+        name: 'Beryllium',
         symbol: 'Be',
         state: 'solid',
         group: 'alkaline earth metal',
@@ -32,7 +32,7 @@ let elements = {
         energyLevels: ['2', '2']
     },
     boron: {
-        name: 'boron',
+        name: 'Boron',
         symbol: 'B',
         state: 'solid',
         group: 'metalloid',
@@ -40,7 +40,7 @@ let elements = {
         energyLevels: ['2', '3']
     },
     carbon: {
-        name: 'carbon',
+        name: 'Carbon',
         symbol: 'C',
         state: 'solid',
         group: 'reactive nonmetal',
@@ -48,7 +48,7 @@ let elements = {
         energyLevels: ['4', '2']
     },
     nitrogen: {
-        name: 'nitrogen',
+        name: 'Nitrogen',
         symbol: 'N',
         state: 'gas',
         group: 'reactive nonmetal',
@@ -56,7 +56,7 @@ let elements = {
         energyLevels: ['2', '5']
     },
     oxygen: {
-        name: 'oxygen',
+        name: 'Oxygen',
         symbol: 'O',
         state: 'gas',
         group: 'reactive nonmetal',
@@ -64,7 +64,7 @@ let elements = {
         energyLevels: ['2', '6']
     },
     flourine: {
-        name: 'flourine',
+        name: 'Flourine',
         symbol: 'F',
         state: 'gas',
         group: 'reactive nonmetal',
@@ -72,7 +72,7 @@ let elements = {
         energyLevels: ['2', '7']
     },
     neon: {
-        name: 'neon',
+        name: 'Neon',
         symbol: 'Ne',
         state: 'gas',
         group: 'noble gas',
@@ -80,7 +80,7 @@ let elements = {
         energyLevels: ['2', '8']
     },
     sodium: {
-        name: 'sodium',
+        name: 'Sodium',
         symbol: 'Na',
         state: 'solid',
         group: 'alkali metal',
@@ -88,7 +88,7 @@ let elements = {
         energyLevels: ['2', '8', '1']
     },
     magnesium: {
-        name: 'magnesium',
+        name: 'Magnesium',
         symbol: 'Mg',
         state: 'solid',
         group: 'alkaline earth metal',
@@ -96,7 +96,7 @@ let elements = {
         energyLevels: ['2', '8', '2']
     },
     aluminium: {
-        name: 'aluminium',
+        name: 'Aluminium',
         symbol: 'Al',
         state: 'solid',
         group: 'post-transition metal',
@@ -104,7 +104,7 @@ let elements = {
         energyLevels: ['2', '8', '3']
     },
     silicon: {
-        name: 'silicon',
+        name: 'Silicon',
         symbol: 'Si',
         state: 'solid',
         group: 'metalloid',
@@ -112,7 +112,7 @@ let elements = {
         energyLevels: ['2', '8', '4']
     },
     phosphorus: {
-        name: 'phosphorus',
+        name: 'Phosphorus',
         symbol: 'P',
         state: 'solid',
         group: 'reactive nonmetal',
@@ -120,7 +120,7 @@ let elements = {
         energyLevels: ['2', '8', '5']
     },
     sulfur: {
-        name: 'sulfer',
+        name: 'Sulfer',
         symbol: 'S',
         state: 'solid',
         group: 'reactive nonmetal',
@@ -128,7 +128,7 @@ let elements = {
         energyLevels: ['2', '8', '6']
     },
     chlorine: {
-        name: 'chlorine',
+        name: 'Chlorine',
         symbol: 'Cl',
         state: 'gas',
         group: 'reactive nonmetal',
@@ -136,7 +136,7 @@ let elements = {
         energyLevels: ['2', '8', '7'],
     },
     argon: {
-        name: 'argon',
+        name: 'Argon',
         symbol: 'Ar',
         state: 'gas',
         group: 'noble gas',
@@ -144,7 +144,7 @@ let elements = {
         energyLevels: ['2', '8', '8']
     },
     potassium: {
-        name: 'potassium',
+        name: 'Potassium',
         symbol: 'K',
         state: 'solid',
         group: 'alkali metal',
@@ -152,7 +152,7 @@ let elements = {
         energyLevels: ['2', '8', '8', '1']
     },
     calcium: {
-        name: 'calcium',
+        name: 'Calcium',
         symbol: 'Ca',
         state: 'solid',
         group: 'alkaline earth metal',
@@ -160,7 +160,7 @@ let elements = {
         energyLevels: ['2', '8', '8', '2']
     },
     scandium: {
-        name: 'scandium',
+        name: 'Scandium',
         symbol: 'Sc',
         state: 'solid',
         group: 'transition metal',
@@ -168,7 +168,7 @@ let elements = {
         energyLevels: ['2', '8', '9', '2']
     },
     titanium: {
-        name: 'titanium',
+        name: 'Titanium',
         symbol: 'Ti',
         state: 'solid',
         group: 'transition metal',
@@ -176,7 +176,7 @@ let elements = {
         energyLevels: ['2', '8', '10', '2']
     },
     vanadium: {
-        name: 'vanadium',
+        name: 'Vanadium',
         symbol: 'V',
         state: 'solid',
         group: 'transition metal',
@@ -184,7 +184,7 @@ let elements = {
         energyLevels: ['2', '8', '11', '2']
     },
     chromium: {
-        name: 'chromium',
+        name: 'Chromium',
         symbol: 'Cr',
         state: 'solid',
         group: 'transition metal',
@@ -192,7 +192,7 @@ let elements = {
         energyLevels: ['2', '8', '13', '1']
     },
     manganese: {
-        name: 'manganese',
+        name: 'Manganese',
         symbol: 'Mn',
         state: 'solid',
         group: 'transition metal',
@@ -200,7 +200,7 @@ let elements = {
         energyLevels: ['2', '8', '13', '2']
     },
     iron: {
-        name: 'iron',
+        name: 'Iron',
         symbol: 'Fe',
         state: 'solid',
         group: 'transition metal',
@@ -208,7 +208,7 @@ let elements = {
         energyLevels: ['2', '8', '14', '2']
     },
     cobalt: {
-        name: 'cobalt',
+        name: 'Cobalt',
         symbol: 'Co',
         state: 'solid',
         group: 'transition metal',
@@ -216,7 +216,7 @@ let elements = {
         energyLevels: ['2', '8', '15', '2']
     },
     nickel: {
-        name: 'nickel',
+        name: 'Nickel',
         symbol: 'Ni',
         state: 'solid',
         group: 'transition metal',
@@ -224,7 +224,7 @@ let elements = {
         energyLevels: ['2', '8', '16', '2']
     },
     copper: {
-        name: 'copper',
+        name: 'Copper',
         symbol: 'Cu',
         state: 'solid',
         group: 'transition metal',
@@ -232,7 +232,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '1']
     },
     zinc: {
-        name: 'zinc',
+        name: 'Zinc',
         symbol: 'Zn',
         state: 'solid',
         group: 'transition metal',
@@ -240,7 +240,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '2']
     },
     gallium: {
-        name: 'gallium',
+        name: 'Gallium',
         symbol: 'Ga',
         state: 'solid',
         group: 'post-transition metal',
@@ -248,7 +248,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '3']
     },
     germanium: {
-        name: 'germanium',
+        name: 'Germanium',
         symbol: 'Ge',
         state: 'solid',
         group: 'metalloid',
@@ -256,7 +256,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '4']
     },
     arsenic: {
-        name: 'arsenic',
+        name: 'Arsenic',
         symbol: 'As',
         state: 'solid',
         group: 'metalloid',
@@ -264,7 +264,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '5']
     },
     selenium: {
-        name: 'selenium',
+        name: 'Selenium',
         symbol: 'Se',
         state: 'solid',
         group: 'reactive nonmetal',
@@ -272,7 +272,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '6']
     },
     bromine: {
-        name: 'bromine',
+        name: 'Bromine',
         symbol: 'Br',
         state: 'liquid',
         group: 'reactive nonmetal',
@@ -280,7 +280,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '7']
     },
     krypton: {
-        name: 'krypton',
+        name: 'Krypton',
         symbol: 'Kr',
         state: 'gas',
         group: 'noble gas',
@@ -288,7 +288,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '8']
     },
     rubidium: {
-        name: 'rubidium',
+        name: 'Rubidium',
         symbol: 'Rb',
         state: 'solid',
         group: 'alkali metal',
@@ -296,7 +296,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '8', '1']
     },
     strontium: {
-        name: 'strontium',
+        name: 'Strontium',
         symbol: 'Sr',
         state: 'solid', 
         group: 'alkaline earth metal',
@@ -304,7 +304,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '8', '2']
     },
     yttrium: {
-        name: 'yttrium',
+        name: 'Yttrium',
         symbol: 'Y',
         state: 'solid',
         group: 'transition metal',
@@ -312,7 +312,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '9', '2']
     },
     zirconium: {
-        name: 'zirconium',
+        name: 'Zirconium',
         symbol: 'Zr',
         state: 'solid',
         group: 'transition metal',
@@ -320,7 +320,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '10', '2']
     },
     niobium: {
-        name: 'niobium',
+        name: 'Niobium',
         symbol: 'Nb',
         state: 'solid',
         group: 'transition metal',
@@ -328,7 +328,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '12', '1']
     },
     molybdenum: {
-        name: 'molybdenum',
+        name: 'Molybdenum',
         symbol: 'Mo',
         state: 'solid',
         group: 'transition metal',
@@ -336,7 +336,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '13', '1']
     },
     technetium: {
-        name: 'technetium',
+        name: 'Technetium',
         symbol: 'Tc',
         state: 'solid',
         group: 'transition metal',
@@ -344,7 +344,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '13', '2']
     },
     ruthenium: {
-        name: 'ruthenium',
+        name: 'Ruthenium',
         symbol: 'Ru',
         state: 'solid', 
         group: 'transition metal',
@@ -352,7 +352,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '15', '1']
     },
     rhodium: {
-        name: 'rhodium',
+        name: 'Rhodium',
         symbol: 'Rh',
         state: 'solid',
         group: 'transition metal',
@@ -360,7 +360,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '16', '1']
     },
     palladium: {
-        name: 'palladium',
+        name: 'Palladium',
         symbol: 'Pd',
         state: 'solid',
         group: 'transition metal',
@@ -368,7 +368,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18']
     },
     silver: {
-        name: 'silver',
+        name: 'Silver',
         symbol: 'Ag',
         state: 'solid',
         group: 'transition metal',
@@ -376,7 +376,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '1']
     },
     cadmium: {
-        name: 'cadmium',
+        name: 'Cadmium',
         symbol: 'Cd',
         state: 'solid',
         group: 'transition metal',
@@ -384,7 +384,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '2']
     },
     indium: {
-        name: 'indium',
+        name: 'Indium',
         symbol: 'In',
         state: 'solid',
         group: 'post-transition metal',
@@ -392,7 +392,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '3']
     },
     tin: {
-        name: 'tin',
+        name: 'Tin',
         symbol: 'Sn',
         state: 'solid',
         group: 'post-transition metal',
@@ -400,7 +400,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '4']
     },
     antimony: {
-        name: 'antimony',
+        name: 'Antimony',
         symbol: 'Sb',
         state: 'solid',
         group: 'metalloid',
@@ -408,7 +408,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '5']
     },
     tellurium: {
-        name: 'tellurium',
+        name: 'Tellurium',
         symbol: 'Te',
         state: 'solid',
         group: 'metalloid',
@@ -416,7 +416,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '6']
     },
     iodine: {
-        name: 'iodine',
+        name: 'Iodine',
         symbol: 'Br',
         state: 'liquid', 
         group: 'reactive nonmetal',
@@ -424,7 +424,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '7']
     },
     xenon: {
-        name: 'xenon',
+        name: 'Xenon',
         symbol: 'Xe',
         state: 'gas',
         group: 'noble gas',
@@ -432,7 +432,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '8']
     },
     caesium: {
-        name: 'caesium',
+        name: 'Caesium',
         symbol: 'Cs',
         state: 'solid',
         group: 'alkali metal',
@@ -440,7 +440,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '8', '1']
     },
     barium: {
-        name: 'barium',
+        name: 'Barium',
         symbol: 'Ba',
         state: 'solid',
         group: 'alkaline earth metal',
@@ -448,7 +448,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '8', '2']
     },
     lanthanum: {
-        name: 'lanthanum',
+        name: 'Lanthanum',
         symbol: 'La',
         state: 'solid',
         group: 'lanthanide',
@@ -456,7 +456,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '18', '9', '2']
     },
     cerium: {
-        name: 'cerium',
+        name: 'Cerium',
         symbol: 'Ce',
         state: 'solid',
         group: 'lanthanide',
@@ -464,7 +464,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '19', '9', '2']
     },
     praseodymium: {
-        name: 'praseodymium',
+        name: 'Praseodymium',
         symbol: 'Pr',
         state: 'solid',
         group: 'lanthanide',
@@ -472,7 +472,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '21', '8', '2']
     },
     neodymium: {
-        name: 'neodymium',
+        name: 'Neodymium',
         symbol: 'Nd',
         state: 'solid',
         group: 'lanthanide',
@@ -480,7 +480,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '22', '8', '2']
     },
     promethium: {
-        name: 'promethium',
+        name: 'Promethium',
         symbol: 'Pm',
         state: 'solid',
         group: 'lanthanide',
@@ -488,7 +488,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '23', '8', '2']
     },
     samarium: {
-        name: 'samarium',
+        name: 'Samarium',
         symbol: 'Sm',
         state: 'solid',
         group: 'lanthanide',
@@ -496,7 +496,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '24', '8', '2']
     },
     europium: {
-        name: 'europium',
+        name: 'Europium',
         symbol: 'Eu',
         state: 'solid',
         group: 'lanthanide',
@@ -504,7 +504,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '25', '8', '2']
     },
     gadolinium: {
-        name: 'gadolinium',
+        name: 'Gadolinium',
         symbol: 'Gd',
         state: 'solid',
         group: 'lanthanide',
@@ -512,7 +512,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '25', '9' ,'2']
     },
     terbium: {
-        name: 'terbium',
+        name: 'Terbium',
         symbol: 'Tb',
         state: 'solid',
         group: 'lanthanide',
@@ -520,7 +520,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '27', '8', '2']
     },
     dysprosium: {
-        name: 'dysprosium',
+        name: 'Dysprosium',
         symbol: 'Dy',
         state: 'solid',
         group: 'lanthanide',
@@ -528,7 +528,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '28', '8', '2']
     },
     holmium: {
-        name: 'holmium',
+        name: 'Holmium',
         symbol: 'Ho',
         state: 'solid',
         group: 'lanthanide',
@@ -536,7 +536,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '29', '2']
     },
     erbium: {
-        name: 'erbium',
+        name: 'Erbium',
         symbol: 'Er',
         state: 'solid',
         group: 'lanthanide',
@@ -544,7 +544,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '30', '8', '2']
     },
     thulium: {
-        name: 'thulium',
+        name: 'Thulium',
         symbol: 'Tm',
         state: 'solid',
         group: 'lanthanide',
@@ -552,7 +552,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '31', '8', '2']
     },
     ytterbium: {
-        name: 'ytterbium',
+        name: 'Ytterbium',
         symbol: 'Yb',
         state: 'solid',
         group: 'lanthanide',
@@ -560,7 +560,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '8', '2']
     },
     lutetium: {
-        name: 'lutetium',
+        name: 'Lutetium',
         symbol: 'Lu',
         state: 'solid',
         group: 'lanthanide',
@@ -568,7 +568,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '9', '2']
     },
     hafnium: {
-        name: 'hafnium',
+        name: 'Hafnium',
         symbol: 'Hf',
         state: 'solid',
         group: 'transition metal',
@@ -576,7 +576,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '10', '2']
     },
     tantalum: {
-        name: 'tantalum',
+        name: 'Tantalum',
         symbol: 'Ta',
         state: 'solid',
         group: 'transition metal',
@@ -584,7 +584,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '11', '2']
     },
     tungsten: {
-        name: 'tungsten',
+        name: 'Tungsten',
         symbol: 'W',
         state: 'solid',
         group: 'transition metal',
@@ -592,7 +592,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '12', '2']
     },
     rhenium: {
-        name: 'rhenium',
+        name: 'Rhenium',
         symbol: 'Re',
         state: 'solid',
         group: 'transition metal',
@@ -600,7 +600,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '13', '2']
     },
     osmium: {
-        name: 'osmium',
+        name: 'Osmium',
         symbol: 'Os',
         state: 'solid',
         group: 'transition metal',
@@ -608,7 +608,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '14', '2']
     },
     iridium: {
-        name: 'iridium',
+        name: 'Iridium',
         symbol: 'Ir',
         state: 'solid',
         group: 'transition metal',
@@ -616,7 +616,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '15', '2']
     },
     platinum: {
-        name: 'platinum',
+        name: 'Platinum',
         symbol: 'Pt',
         state: 'solid',
         group: 'transition metal',
@@ -624,7 +624,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '17', '1']
     },
     gold: {
-        name: 'gold',
+        name: 'Gold',
         symbol: 'Au',
         state: 'solid',
         group: 'transition metal',
@@ -632,7 +632,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '1']
     },
     mercury: {
-        name: 'mercury',
+        name: 'Mercury',
         symbol: 'Hg',
         state: 'liquid',
         group: 'transition metal',
@@ -640,7 +640,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '2']
     },
     thallium: {
-        name: 'thallium',
+        name: 'Thallium',
         symbol: 'Tl',
         state: 'solid',
         group: 'post-transition metal',
@@ -648,7 +648,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '3']
     },
     lead: {
-        name: 'lead',
+        name: 'Lead',
         symbol: 'Pb',
         state: 'solid',
         group: 'post-transition metal',
@@ -656,7 +656,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '4']
     },
     bismuth: {
-        name: 'bismuth',
+        name: 'Bismuth',
         symbol: 'Bi',
         state: 'solid',
         group: 'post-transition metal',
@@ -664,7 +664,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '5']
     },
     polonium: {
-        name: 'polonium',
+        name: 'Polonium',
         symbol: 'Po',
         state: 'solid',
         group: 'post-transition metal',
@@ -672,7 +672,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '6']
     },
     astatine: {
-        name: 'astatine',
+        name: 'Astatine',
         symbol: 'At',
         state: 'solid',
         group: 'post-transition metal',
@@ -680,7 +680,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '7']
     },
     radon: {
-        name: 'radon',
+        name: 'Radon',
         symbol: 'Rn',
         state: 'gas',
         group: 'noble gas',
@@ -688,7 +688,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '8']
     },
     francium: {
-        name: 'francium',
+        name: 'Francium',
         symbol: 'Fr',
         state: 'solid',
         group: 'alkali metal',
@@ -696,7 +696,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '8', '1']
     },
     radium: {
-        name: 'radium',
+        name: 'Radium',
         symbol: 'Ra',
         state: 'solid',
         group: 'alkaline earth metal',
@@ -704,7 +704,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '8', '2']
     },
     actinium: {
-        name: 'actinium',
+        name: 'Actinium',
         symbol: 'Ac',
         state: 'solid',
         group: 'actinide',
@@ -712,7 +712,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '9', '2']
     },
     thorium: {
-        name: 'thorium',
+        name: 'Thorium',
         symbol: 'Th',
         state: 'solid',
         group: 'actinide',
@@ -720,7 +720,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '18', '10', '2']
     },
     protactinium: {
-        name: 'protactinium',
+        name: 'Protactinium',
         symbol: 'Pa',
         state: 'solid',
         group: 'actinide',
@@ -728,7 +728,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '20', '9', '2']
     },
     uranium: {
-        name: 'uranium',
+        name: 'Uranium',
         symbol: 'U',
         state: 'solid',
         group: 'actinide',
@@ -736,7 +736,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '21', '9', '2']
     },
     neptunium: {
-        name: 'neptunium',
+        name: 'Neptunium',
         symbol: 'Np',
         state: 'solid',
         group: 'actinide',
@@ -744,7 +744,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '22', '9', '2']
     },
     plutonium: {
-        name: 'plutonium',
+        name: 'Plutonium',
         symbol: 'Pu',
         state: 'solid',
         group: 'actinide',
@@ -752,7 +752,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '24', '8', '2']
     },
     americium: {
-        name: 'americium',
+        name: 'Americium',
         symbol: 'Am',
         state: 'solid',
         group: 'actinide',
@@ -760,7 +760,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '25', '8', '2']
     },
     curium: {
-        name: 'curium',
+        name: 'Curium',
         symbol: 'Cm',
         state: 'solid',
         group: 'actinide',
@@ -768,7 +768,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '25', '9', '2']
     },
     berkelium: {
-        name: 'berkelium',
+        name: 'Berkelium',
         symbol: 'Bk',
         state: 'solid',
         group: 'actinide',
@@ -776,7 +776,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '27', '8', '2']
     },
     californium: {
-        name: 'californium',
+        name: 'Californium',
         symbol: 'Cf',
         state: 'solid',
         group: 'actinide',
@@ -784,7 +784,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '28', '8', '2']
     },
     einsteinium: {
-        name: 'einsteinium',
+        name: 'Einsteinium',
         symbol: 'Es',
         state: 'solid',
         group: 'actinide',
@@ -792,7 +792,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '29', '8', '2']
     },
     fermium: {
-        name: 'fermium',
+        name: 'Fermium',
         symbol: 'Fm',
         state: 'solid',
         group: 'actinide',
@@ -800,7 +800,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '30', '8', '2']
     },
     mendelevium: {
-        name: 'mendelevium',
+        name: 'Mendelevium',
         symbol: 'Md',
         state: 'solid',
         group: 'actinide',
@@ -808,7 +808,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '31', '8', '2']
     },
     nobelium: {
-        name: 'nobelium',
+        name: 'Nobelium',
         symbol: 'No',
         state: 'solid',
         group: 'actinide',
@@ -816,7 +816,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '8', '2']
     },
     lawrencium: {
-        name: 'lawrencium',
+        name: 'Lawrencium',
         symbol: 'Lr',
         state: 'solid',
         group: 'actinide',
@@ -824,7 +824,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '8', '3']
     },
     rutherfordium: {
-        name: 'rutherfordium',
+        name: 'Rutherfordium',
         symbol: 'Rf',
         state: 'unknown',
         group: 'transition metal',
@@ -832,7 +832,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '10', '2']
     },
     dubnium: {
-        name: 'dubnium',
+        name: 'Dubnium',
         symbol: 'Db',
         state: 'unknown',
         group: 'transition metal',
@@ -840,7 +840,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '11', '2']
     },
     seaborgium: {
-        name: 'seaborgium',
+        name: 'Seaborgium',
         symbol: 'Sg',
         state: 'unknown',
         group: 'transition metal',
@@ -848,7 +848,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '12', '2']
     },
     bohrium: {
-        name: 'bohrium',
+        name: 'Bohrium',
         symbol: 'Bh',
         state: 'unknown',
         group: 'transition metal',
@@ -856,7 +856,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '13', '2']
     },
     hassium: {
-        name: 'hassium',
+        name: 'Hassium',
         symbol: 'Hs',
         state: 'unknown',
         group: 'transition metal',
@@ -864,7 +864,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '14', '2']
     },
     meitnerium: {
-        name: 'meitnerium',
+        name: 'Meitnerium',
         symbol: 'Mt',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -872,7 +872,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '15', '2']
     },
     darmstadtium: {
-        name: 'darmstadtium',
+        name: 'Darmstadtium',
         symbol: 'Ds',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -880,7 +880,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '17', '1']
     },
     roentgenium: {
-        name: 'roentgenium',
+        name: 'Roentgenium',
         symbol: 'Rg',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -888,7 +888,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '17', '2']
     },
     copernicium: {
-        name: 'copernicium',
+        name: 'Copernicium',
         symbol: 'Cn',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -896,7 +896,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '18', '2']
     },
     nihonium: {
-        name: 'nihonium',
+        name: 'Nihonium',
         symbol: 'Nh',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -904,7 +904,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '18', '3']
     },
     flerovium: {
-        name: 'flerovium',
+        name: 'Flerovium',
         symbol: 'Fl',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -912,7 +912,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '18', '4']
     },
     moscovium: {
-        name: 'moscovium',
+        name: 'Moscovium',
         symbol: 'Mc',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -920,7 +920,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '18', '5']
     },
     livermorium: {
-        name: 'livermorium',
+        name: 'Livermorium',
         symbol: 'Lv',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -928,7 +928,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '18', '8']
     },
     tennessine: {
-        name: 'tennessine',
+        name: 'Tennessine',
         symbol: 'Ts',
         state: 'unknown',
         group: 'unknown chemical properties',
@@ -936,7 +936,7 @@ let elements = {
         energyLevels: ['2', '8', '18', '32', '32', '18', '7']
     },
     oganesson: {
-        name: 'oganesson',
+        name: 'Oganesson',
         symbol: 'Og',
         state: 'unknown',
         group: 'unknown chemical properties',

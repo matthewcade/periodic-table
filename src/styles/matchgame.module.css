@@ -1,0 +1,102 @@
+#container {
+    width: 100vw;
+    height: 90vh;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#instructions {
+    margin: 3vh 0 2.5vh 0;
+}
+
+#gamegrid {
+    display: grid;
+    grid-template-columns: 15vh 15vh 15vh 15vh;
+    grid-template-rows: 15vh 15vh 15vh 15vh;
+    gap: 10px;
+}
+
+.gamebutton {
+    font-size: 1.7vh;
+    text-align: center;
+
+    background-color: rgb(0,0,0,1);
+    border: 1px solid #e5e5e5;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.gamebutton:hover {
+    border: 2px solid #fff;
+}
+
+.correctanswer {
+    background-color: green;
+}
+
+.incorrectanswer {
+    background-color: red;
+}
+
+.Ti {
+    color: #ff0000;
+}
+
+#reshuffle {
+    color: #000;
+    background-color: #ffff00;
+
+    width: 7em;
+    height: 2.5em;
+
+    outline: none;
+}
+
+#reshuffle:hover {
+    outline: 1px solid #ffffff;
+}
+
+#reshuffle:focus {
+    outline: none;
+}
+
+#reshuffle:active {
+    outline: none;
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 100vw;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        position: relative;
+    }
+
+    #instructions {
+        margin: 0 0 2.5vh 0;
+    }
+
+    #gamegrid {
+        display: grid;
+        grid-template-columns: 20vh 20vh;
+        grid-template-rows: repeat(8, 7vh);
+        gap: 10px;
+    }
+
+    #reshuffle {
+        margin: 2vh 0 0 0;
+    }
+}
