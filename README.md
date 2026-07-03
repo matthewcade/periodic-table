@@ -15,5 +15,5 @@ The [Match Game] screen gives you eight hidden elements and eight hidden symbols
 
 ### Coming Soon
 
-- Enhancement: Hide elements on the periodic table by group category
 - Enhancement: Difficulty for the grid game
+- Display specific element categories in the Periodic Table
