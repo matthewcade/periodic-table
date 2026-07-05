@@ -1,0 +1,219 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242424; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+#container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#footer {
+    text-align: center;
+
+    width: 100%;
+}
+
+#periodictable {
+    width: 80vw;
+    height: 80vh;
+
+    overflow: auto;
+}
+
+#toptable {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(18, minmax(9vh, 9vh));
+    grid-template-rows: repeat(7, minmax(9vh, 9vh));
+    gap: 0.25em;
+}
+
+#bottomtable {
+    margin: 0.25em 0 0 0;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: repeat(14, minmax(9vh, 9vh));
+    grid-template-rows: repeat(2, minmax(9vh, 9vh));
+    gap: 0.25em;
+}
+
+.elementinfo {
+    border-radius: 2px;
+
+    position: relative;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.elementbutton {
+    text-align: center;
+    font-size: 3vh;
+
+    background-color: rgb(0,0,0,1);
+    border: 0.075em solid #e5e5e5;
+    border-radius: 2px;
+
+    width: 9vh;
+    height: 9vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.showButton {
+    opacity: 1;
+}
+
+.hideButton {
+    opacity: 0;
+}
+
+.energylevel {
+    font-size: 1.5vh;
+}
+
+.symbol {
+    font-size: 1.7vh;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 1.3vh;
+    font-weight: 500;
+}
+
+.weight {
+    font-size: 1.3vh;
+}
+
+.state {
+    text-align: right;
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+
+.alkalimetal {
+    color: #0e6a7c;
+    background-color: #d0f6f6;
+}
+
+.metalloid {
+    color: #83510e;
+    background-color: #ffefd8;
+}
+
+.actinide {
+    color: #b53215;
+    background-color: #fee4d0;
+}
+
+.alkalineearthmetal {
+    color: #dc1c34;
+    background-color: #ffe7ea;
+}
+
+.reactivenonmetal {
+    color: #1061d4;
+    background-color: #e1f1ff;
+}
+
+.unknownchemicalproperties {
+    color: #37363f;
+    background-color: #e6e6e4;
+}
+
+.transitionmetal {
+    color: #5239d1;
+    background-color: #f2e4ff;
+}
+
+.noblegas {
+    color: #bf2a5c;
+    background-color: #ffe6ef;
+}
+
+.posttransitionmetal {
+    color: #297058;
+    background-color: #dbfaeb;
+}
+
+.lanthanide {
+    color: #123950;
+    background-color: #e7f8ff;
+}
+
+#revealbuttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+
+    padding: 2vh 0;
+}
+
+#showallbutton {
+    color: #1061d4;
+    background-color: #e1f1ff;
+}
+
+#showallbutton:hover {
+    color: #1061d4;
+    background-color: #e1f1ff;
+    border: 2px solid #1061d4;
+}
+
+#hideallbutton {
+    border: 2px solid #fff;
+}
+
+#hideallbutton:hover {
+    border: 2px solid #b1b1b1;
+}
+
+@media screen and (max-width: 500px) {
+    #periodictable {
+        width: 100vw;
+
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+        scrollbar-width: none;
+    }
+
+    #toptable, #bottomtable {
+        padding: 5vw;
+    }
+
+    #revealbuttons {
+        padding: 3vw 0;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+}

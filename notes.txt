@@ -1,0 +1,3 @@
+Fonts: Geometric Sans, Squared-off Sans, UPPERCASE, Monospace
+Colors: White BG, vibrant colors that pop for accents
+Spacing

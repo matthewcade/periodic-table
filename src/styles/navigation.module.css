@@ -1,66 +1,100 @@
+@keyframes shift-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 #container {
-    width: 100%;
-    height: 100%;
-    
-    padding: 3vh;
+    width: 100vw;
+    height: 100vh;
 
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
+
 }
 
 #content {
+    background-color: #303030;
+
+    width: 100%;
+    height: 8vh;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: start;
-}
-
-#navbar {
-    height: 92vh;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: start;
     align-items: center;
-    gap: 2vh;
+    
+    animation-name: shift-down;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 
-    position: relative;
     z-index: 2;
 }
 
 #logo {
-    width: 25vh;
+    width: auto;
+    height: 2em;
+
+    padding: 0 0 0 1em;
 }
 
-button {
-    font-size: 3vh;
-    
-    width: 30vh;
+#links {
+    padding: 0 4em 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-#periodictablebutton {
-    background-color: #00a2ff;
+.links {
+    font-size: 16px;
+
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0);
+    border: 0px solid #fff;
+
+    padding: 0 0 0 1em;
 }
 
-#gridgamebutton {
-    color: #000;
-    background-color: #ffff00;
+.dropdowncontainer:hover .dropdown {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    gap: 10px;
 }
 
-#matchgamebutton {
-    color: #000;
-    background-color: #44ff00;
+.dropdown {
+    background-color: #303030;
+
+    border-radius: 5px;
+
+    padding: 1em;
+
+    display: none;
+    position: absolute;
+}
+
+.dropdownlink {
+    font-size: 16px;
+
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0);
+    border: 0px solid #fff;
+
+    cursor: pointer;
+}
+
+.dropdownlink:disabled:hover {
+    text-decoration: none;
+
+    cursor: default;
 }
 
 @media screen and (max-width: 500px) {
-    #content {
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-
-    #navbar {
-        height: auto;
-        
-        padding: 0 0 5vh 0;
+    #links {
+        padding: 0 2em 0 0;
     }
 }

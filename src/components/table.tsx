@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import elements from '../assets/elements.tsx';
 import styles from '../styles/table.module.css';
+import Footer from './footer.tsx';
 
 const allElements = Object.values(elements);
 
@@ -48,8 +50,8 @@ const PeriodicTable = () => {
             const getLevels = addLevels(allElements[i].energyLevels);
             const buttonId = 'button' + buttonCounter;
             topTable.push(
-                <div key={allElements[i].name} className={`${styles.elementinfo} ${styles[getClass]}`}>
-                    <div style={{padding: "0 0.5vh"}}>
+                <div key={allElements[i].name} className={`${styles.elementinfo} ${styles[getClass]} ${styles.show}`}>
+                    <div>
                         <div className={styles.energylevel}>{getLevels}</div>
                         <div className={styles.symbol}>{allElements[i].symbol}</div>
                         <div className={styles.name}>{getName}</div>
@@ -70,8 +72,8 @@ const PeriodicTable = () => {
             const getLevels = addLevels(allElements[i].energyLevels);
             const buttonId = 'button' + buttonCounter;
             topTable.push(
-                <div key={allElements[i].name} className={`${styles.elementinfo} ${styles[getClass]}`}>
-                    <div style={{padding: "0 0.5vh"}}>
+                <div key={allElements[i].name} className={`${styles.elementinfo} ${styles[getClass]} ${styles.show}`}>
+                    <div>
                         <div className={styles.energylevel}>{getLevels}</div>
                         <div className={styles.symbol}>{allElements[i].symbol}</div>
                         <div className={styles.name}>{getName}</div>
@@ -87,8 +89,8 @@ const PeriodicTable = () => {
             const getLevels = addLevels(allElements[i].energyLevels);
             const buttonId = 'button' + buttonCounter;
             bottomTable.push(
-                <div key={allElements[i].name} className={`${styles.elementinfo} ${styles[getClass]}`}>
-                    <div style={{padding: "0 0.5vh"}}>
+                <div key={allElements[i].name} className={`${styles.elementinfo} ${styles[getClass]} ${styles.show}`}>
+                    <div>
                         <div className={styles.energylevel}>{getLevels}</div>
                         <div className={styles.symbol}>{allElements[i].symbol}</div>
                         <div className={styles.name}>{getName}</div>
@@ -104,8 +106,8 @@ const PeriodicTable = () => {
             const getLevels = addLevels(allElements[i].energyLevels);
             const buttonId = 'button' + buttonCounter;
             topTable.push(
-                <div key={allElements[i].name} className={`${styles.elementinfo} ${styles[getClass]}`}>
-                    <div style={{padding: "0 0.5vh"}}>
+                <div key={allElements[i].name} className={`${styles.elementinfo} ${styles[getClass]} ${styles.show}`}>
+                    <div>
                         <div className={styles.energylevel}>{getLevels}</div>
                         <div className={styles.symbol}>{allElements[i].symbol}</div>
                         <div className={styles.name}>{getName}</div>
@@ -135,19 +137,271 @@ const PeriodicTable = () => {
         });
     }
 
+    const [alkMState, setAlkM] = useState('active');
+
+    function toggleAlkaliMetals() {
+        if (alkMState == 'active') {
+            document.querySelector(`#${styles.alkalimetalsbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setAlkM('inactive');
+        } else {
+            document.querySelector(`#${styles.alkalimetalsbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setAlkM('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.alkalimetal}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [metallState, setMetall] = useState('active');
+
+    function toggleMetalloids() {
+        if (metallState == 'active') {
+            document.querySelector(`#${styles.metalloidsbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setMetall('inactive');
+        } else {
+            document.querySelector(`#${styles.metalloidsbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setMetall('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.metalloid}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [actinState, setActin] = useState('active');
+
+    function toggleActinides() {
+        if (actinState == 'active') {
+            document.querySelector(`#${styles.actinidesbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setActin('inactive');
+        } else {
+            document.querySelector(`#${styles.actinidesbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setActin('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.actinide}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [alkEMState, setALKEM] = useState('active');
+
+    function toggleAlkalineEarthMetals() {
+        if (alkEMState == 'active') {
+            document.querySelector(`#${styles.alkalineearthmetalsbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setALKEM('inactive');
+        } else {
+            document.querySelector(`#${styles.alkalineearthmetalsbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setALKEM('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.alkalineearthmetal}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [reactiveState, setReactive] = useState('active');
+
+    function toggleReactiveNonMetal() {
+        if (reactiveState == 'active') {
+            document.querySelector(`#${styles.reactivenonmetalsbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setReactive('inactive');
+        } else {
+            document.querySelector(`#${styles.reactivenonmetalsbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setReactive('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.reactivenonmetal}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [uCPState, setUCP] = useState('active');
+
+    function toggleUnknownChemicalProperties() {
+        if (uCPState == 'active') {
+            document.querySelector(`#${styles.unknownchemicalpropertiesbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setUCP('inactive');
+        } else {
+            document.querySelector(`#${styles.unknownchemicalpropertiesbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setUCP('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.unknownchemicalproperties}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [transMState, setTransM] = useState('active');
+
+    function toggleTransitionMetals() {
+        if (transMState == 'active') {
+            document.querySelector(`#${styles.transitionmetalsbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setTransM('inactive');
+        } else {
+            document.querySelector(`#${styles.transitionmetalsbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setTransM('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.transitionmetal}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [nGState, setNG] = useState('active');
+
+    function toggleNobleGases() {
+        if (nGState == 'active') {
+            document.querySelector(`#${styles.noblegasesbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setNG('inactive');
+        } else {
+            document.querySelector(`#${styles.noblegasesbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setNG('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.noblegas}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [pTMState, setPTM] = useState('active');
+
+    function togglePostTransitionMetals() {
+        if (pTMState == 'active') {
+            document.querySelector(`#${styles.posttransitionmetalsbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setPTM('inactive');
+        } else {
+            document.querySelector(`#${styles.posttransitionmetalsbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setPTM('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.posttransitionmetal}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
+    const [lanthState, setLanth] = useState('active');
+
+    function toggleLanthanides() {
+        if (lanthState == 'active') {
+            document.querySelector(`#${styles.lanthanidesbutton}`)?.classList.replace(styles.active, styles.inactive);
+            setLanth('inactive');
+        } else {
+            document.querySelector(`#${styles.lanthanidesbutton}`)?.classList.replace(styles.inactive, styles.active);
+            setLanth('active');
+        }
+
+        const group = document.querySelectorAll(`.${styles.lanthanide}`);
+        
+        group.forEach((el) => {
+            if (el.classList.contains(styles.show)) {
+                el.classList.replace(styles.show, styles.hide);
+            } else {
+                el.classList.replace(styles.hide, styles.show);
+            }
+        })
+    }
+
     const showButton = <button key='showbutton' id={styles.showallbutton} onClick={() => {showAll()}}>Show All</button>
     const hideButton = <button key='hidebutton'id={styles.hideallbutton} onClick={() => {hideAll()}}>Hide All</button>
 
+    const alkaliMetalsButton = <button key='alkalimetals' id={styles.alkalimetalsbutton} className={styles.active} onClick={() => {toggleAlkaliMetals()}}>Alkali Metals</button>
+    const metalloidsButton = <button key='metalloids' id={styles.metalloidsbutton} className={styles.active} onClick={() => {toggleMetalloids()}}>Metalloids</button>
+    const actinidesButton = <button key='actinides' id={styles.actinidesbutton} className={styles.active} onClick={() => {toggleActinides()}}>Actinides</button>
+    const alkalineEarthMetalsButton = <button key='alkalineearthmetals' id={styles.alkalineearthmetalsbutton} className={styles.active} onClick={() => {toggleAlkalineEarthMetals()}}>Alkaline Earth Metals</button>
+    const reactiveNonMetalsButton = <button key='reactivenonmetal' id={styles.reactivenonmetalsbutton} className={styles.active} onClick={() => {toggleReactiveNonMetal()}}>Reactive<br />Non-Metals</button>
+    const unknownChemicalPropertiesButton = <button key='unknownchemicalproperties' id={styles.unknownchemicalpropertiesbutton} className={styles.active} onClick={() => {toggleUnknownChemicalProperties()}}>Unknown Chemical Properties</button>
+    const transitionMetalsButton = <button key='transitionmetals' id={styles.transitionmetalsbutton} className={styles.active} onClick={() => {toggleTransitionMetals()}}>Transition Metals</button>
+    const nobleGasesButton = <button key='noblegases' id={styles.noblegasesbutton} className={styles.active} onClick={() => {toggleNobleGases()}}>Noble Gases</button>
+    const postTransitionMetalsButton = <button key='posttransitionmetals' id={styles.posttransitionmetalsbutton} className={styles.active} onClick={() => {togglePostTransitionMetals()}}>Post-Transition Metals</button>
+    const lanthanidesButton = <button key='lanthanides' id={styles.lanthanidesbutton} className={styles.active} onClick={() => {toggleLanthanides()}}>Lanthanides</button>
+
     return (
         <div id={styles.container}>
+            <div id={styles.revealbuttons}>
+                <p>
+                    &nbsp; &nbsp;The periodic table is made up of 118 elements! Don't let that number stop you from learning each one's unique properties and acing your exams.
+                    <br /><br />
+                    &nbsp; &nbsp;Study each element's properties and test your knowledge by hiding the element information with this interactive table.
+                    <br /><br />
+                    Try clicking on an element!
+                </p>
+                {showButton}
+                {hideButton}
+                <h2 style={{ fontSize: '16px', padding: '0.5em 0 0.5em 0' }}>Filter by Group:</h2>
+                <div id={styles.groupbuttons}>
+                    {alkaliMetalsButton}
+                    {metalloidsButton}
+                    {actinidesButton}
+                    {alkalineEarthMetalsButton}
+                    {reactiveNonMetalsButton}
+                    {unknownChemicalPropertiesButton}
+                    {transitionMetalsButton}
+                    {nobleGasesButton}
+                    {postTransitionMetalsButton}
+                    {lanthanidesButton}
+                </div>
+            </div>
             <div id={styles.periodictable}>
                 <div id={styles.toptable}>{topTable}</div>
                 <div id={styles.bottomtable}>{bottomTable}</div>
             </div>
-            <div id={styles.revealbuttons}>
-                {showButton}
-                {hideButton}
-            </div>
+            <Footer />
         </div>
     );
 }

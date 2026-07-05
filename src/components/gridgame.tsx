@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from '../styles/gridgame.module.css';
 import elements from '../assets/elements.tsx';
+import Footer from './footer.tsx';
 
 const allElements = Object.values(elements);
 let choices: any = [];
@@ -216,7 +217,7 @@ const GridGame = () => {
 
     return (
         <div id={styles.container}>
-            <div id={styles.question}>Which symbol belongs to the element <span style={{fontWeight: 'bold', color: 'yellow'}}>{questionElement}</span>?</div>
+            <div id={styles.question}>Which symbol belongs to the element <span style={{fontWeight: 'bold', color: '#5239d1'}}>{questionElement}</span>?</div>
             <div id={styles.elements}>
                 <div className={`${styles.elementcontainer} ${styles[oneStyle]} ${styles[infoDisplay]}`}>
                     <div className={styles.elementinfo}>
@@ -299,6 +300,7 @@ const GridGame = () => {
             </div>
             <button id={styles.generatebutton} style={ winCheck ? { visibility: 'visible' } : { visibility: 'hidden' } } onClick={setElements}>Play Again</button>
             <div id={styles.streak}>Streak: {streak}</div>
+            <Footer />
         </div>
     )
 }
