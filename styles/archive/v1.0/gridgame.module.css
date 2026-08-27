@@ -1,0 +1,255 @@
+#container {
+    width: 100vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#question {
+    margin: 5vh 0 5vh 0;
+}
+
+#elements {
+    display: grid;
+    grid-template-columns: 25vh 25vh 25vh;
+    grid-template-rows: 25vh 25vh;
+    gap: 10px;
+}
+
+.elementcontainer {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 9px;
+
+    position: relative;
+}
+
+.elementinfo {
+    width: 100%;
+    height: 100%;
+
+    padding: 0.7em;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: first baseline;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.energylevel {
+    font-size: 3vh;
+}
+
+.symbol {
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 3vh;
+}
+
+.weight {
+    font-size: 2.5vh;
+}
+
+.stategroup {
+    text-align: right;
+
+    align-self: last baseline;
+}
+
+.state {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.group {
+    font-size: 1.5vh;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.elementbutton {
+    font-size: 5vh;
+
+    background-color: rgb(0,0,0,1);
+    border: 1px solid #e5e5e5;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.alkalimetal {
+    color: #0e6a7c;
+    background-color: #d0f6f6;
+}
+
+.metalloid {
+    color: #83510e;
+    background-color: #ffefd8;
+}
+
+.actinide {
+    color: #b53215;
+    background-color: #fee4d0;
+}
+
+.alkalineearthmetal {
+    color: #dc1c34;
+    background-color: #ffe7ea;
+}
+
+.reactivenonmetal {
+    color: #1061d4;
+    background-color: #e1f1ff;
+}
+
+.unknownchemicalproperties {
+    color: #37363f;
+    background-color: #e6e6e4;
+}
+
+.transitionmetal {
+    color: #5239d1;
+    background-color: #f2e4ff;
+}
+
+.noblegas {
+    color: #bf2a5c;
+    background-color: #ffe6ef;
+}
+
+.posttransitionmetal {
+    color: #297058;
+    background-color: #dbfaeb;
+}
+
+.lanthanide {
+    color: #123950;
+    background-color: #e7f8ff;
+}
+
+#generatebutton {
+    color: #000;
+    background-color: #ffff00;
+
+    outline: none;
+
+    margin-top: 5vh;
+}
+
+#generatebutton:hover {
+    outline: 1px solid #ffffff;
+}
+
+#generatebutton:focus {
+    outline: none;
+}
+
+#generatebutton:active {
+    outline: none;
+}
+
+#streak {
+    font-size: 3vh;
+    padding: 2vh 0 0 0;
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 100vw;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+    
+    #question, #question span {
+        font-size: 3.5vw;
+        margin: 5vh 0;
+    }
+
+    #elements {
+        width: 100%;
+        height: 35%;
+
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: 15vh 15vh;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #generate-button {
+        margin: 0;
+    }
+
+    .energy-level {
+        font-size: 3.5vw;
+    }
+
+    .symbol {
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
+
+    .name {
+        font-size: 3.5vw;
+    }
+
+    .weight {
+        font-size: 3vw;
+    }
+
+    .state-group {
+        text-align: right;
+
+        align-self: last baseline;
+    }
+
+    .state {
+        font-size: 3.5vw;
+        font-weight: bold;
+    }
+
+    .group {
+        font-size: 2vw;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    #streak {
+        font-size: 5vw;
+
+        padding: 0 0 10vw 0;
+    }
+}

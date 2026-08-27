@@ -1,0 +1,100 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#welcome {
+    width: 100%;
+    height: 92vh;
+
+    padding: 0 0 8vh 0;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: fade-in;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font-family: 'Gill Sans MT';
+    font-size: 40px;
+}
+
+p {
+    width: 35vw;
+}
+
+#marqueecontainer {
+    color: rgb(1, 1, 1, 0.2);
+
+    position: absolute;
+}
+
+.marqueecontainer {
+    width: 50vw;
+    padding: 10px 0;
+
+    white-space: nowrap;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.marqueetrackleft {
+    width: max-content;
+
+    display: flex;
+    animation: scroll-left 60s linear infinite;
+}
+
+.marqueetrackright {
+    display: flex;
+    width: max-content;
+    animation: scroll-right 60s linear infinite;
+}
+
+.marquee {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.marqueecontainer:hover #marqueetrackleft {
+    animation-play-state: paused;
+}
+
+.marqueecontainer:hover #marqueetrackright {
+    animation-play-state: paused;
+}
+
+@media screen and (max-width: 500px) {
+    .marqueecontainer {
+        width: 100vw;
+    }
+}

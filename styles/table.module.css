@@ -1,0 +1,372 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242424; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777; 
+}
+
+#container {
+    width: 100vw;
+    height: 100%;
+
+    padding: 5em 0 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#periodictable {
+    width: 80em;
+    height: 35em;
+
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2);
+
+    padding: 1em;
+
+    z-index: 2;
+
+    overflow-x: auto;
+}
+
+#toptable {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(18, minmax(6em, 6em));
+    grid-template-rows: repeat(7, minmax(6em, 6em));
+    gap: 0.25em;
+}
+
+#bottomtable {
+    margin: 1em 0 0 0;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: repeat(14, minmax(6em, 6em));
+    grid-template-rows: repeat(2, minmax(6em, 6em));
+    gap: 0.25em;
+}
+
+.elementinfo {    
+    border-radius: 2px;
+
+    position: relative;
+    
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.elementbutton {
+    text-align: center;
+    font-size: 5vh;
+
+    color: #fff;
+    background-color: #363636;
+    border-radius: 2px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.elementbutton:hover {
+    background-color: #494949;
+
+    cursor: pointer;
+}
+
+#elementbutton:active {
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 1);
+}
+
+.showButton {
+    opacity: 1;
+}
+
+.hideButton {
+    opacity: 0;
+}
+
+.energylevel {
+    font-size: 0.9em;
+
+    padding: 0.2em 0 0 0.3em;
+}
+
+.symbol {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    padding: 0.2em 0 0 0.2em;
+}
+
+.name {
+    font-size: 0.9em;
+    font-weight: 500;
+
+    padding: 0.4em 0 0 0.3em;
+}
+
+.weight {
+    font-size: 0.7em;
+
+    padding: 0.5em 0 0 0.3em;
+}
+
+.state {
+    text-align: right;
+    font-size: 0.9em;
+    font-weight: bold;
+
+    padding: 0 0.3em 0 0;
+}
+
+.alkalimetal {
+    color: #0e6a7c;
+    background-color: #d0f6f6;
+}
+
+.metalloid {
+    color: #83510e;
+    background-color: #ffefd8;
+}
+
+.actinide {
+    color: #b53215;
+    background-color: #fee4d0;
+}
+
+.alkalineearthmetal {
+    color: #dc1c34;
+    background-color: #ffe7ea;
+}
+
+.reactivenonmetal {
+    color: #1061d4;
+    background-color: #e1f1ff;
+}
+
+.unknownchemicalproperties {
+    color: #37363f;
+    background-color: #e6e6e4;
+}
+
+.transitionmetal {
+    color: #5239d1;
+    background-color: #f2e4ff;
+}
+
+.noblegas {
+    color: #bf2a5c;
+    background-color: #ffe6ef;
+}
+
+.posttransitionmetal {
+    color: #297058;
+    background-color: #dbfaeb;
+}
+
+.lanthanide {
+    color: #123950;
+    background-color: #e7f8ff;
+}
+
+#revealbuttons {
+    height: 100%;
+
+    padding: 1em 1em 0 1em;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+
+    z-index: 2;
+}
+
+#revealbuttons p {
+    font-size: 15px;
+    text-align: center;
+
+    width: 15em;
+}
+
+#revealbuttons button {
+    font-weight: 600;
+
+    border-radius: 5px;
+
+    width: 8em;
+    height: 2.5em;
+}
+
+#revealbuttons button:hover {
+    cursor: pointer;
+}
+
+#showallbutton {
+    font-size: 16px;
+
+    color: #e1f1ff;
+    background-color: #1061d4;
+}
+
+#showallbutton:hover {
+    color: #f0f8ff;
+    background-color: #236dd4;
+}
+
+#showallbutton:active {
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+#hideallbutton {
+    font-size: 16px;
+
+    color: #fff;
+    background-color: #363636;
+}
+
+#hideallbutton:hover {
+    background-color: #494949;
+}
+
+#hideallbutton:active {
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 1);
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+#groupbuttons {
+    font-size: 14px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(9em, 9em));
+    grid-template-rows: repeat(5, minmax(3em, 3em));
+    gap: 0.5em;
+}
+
+#groupbuttons button {
+    width: 100%;
+    height: 100%;
+}
+
+#alkalimetalsbutton {
+    color: #d0f6f6;
+    background-color: #0e6a7c;
+}
+
+#metalloidsbutton {
+    color: #ffefd8;
+    background-color: #83510e;
+}
+
+#actinidesbutton {
+    color: #fee4d0;
+    background-color: #b53215;
+}
+
+#alkalineearthmetalsbutton {
+    color: #ffe7ea;
+    background-color: #dc1c34;
+}
+
+#reactivenonmetalsbutton {
+    color: #e1f1ff;
+    background-color: #1061d4;
+}
+
+#unknownchemicalpropertiesbutton {
+    color: #e6e6e4;
+    background-color: #37363f;
+}
+
+#transitionmetalsbutton {
+    color: #f2e4ff;
+    background-color: #5239d1;
+}
+
+#noblegasesbutton {
+    color: #ffe6ef;
+    background-color: #bf2a5c;
+}
+
+#posttransitionmetalsbutton {
+    color: #dbfaeb;
+    background-color: #297058;
+}
+
+#lanthanidesbutton {
+    color: #e7f8ff;
+    background-color: #123950;
+}
+
+.active {
+    opacity: 1;
+}
+
+.inactive {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    #periodictable {
+        width: 100vw;
+
+        align-self: flex-start;
+
+        scrollbar-width: none;
+    }
+
+    #revealbuttons {
+        height: auto;
+
+        padding: 1em 0;
+
+        flex-flow: row nowrap;
+    }
+
+    #revealbuttons p {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    #groupbuttons {
+        display: none;
+    }
+}

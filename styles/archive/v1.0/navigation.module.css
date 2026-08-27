@@ -1,0 +1,66 @@
+#container {
+    width: 100%;
+    height: 100%;
+    
+    padding: 3vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#navbar {
+    height: 92vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 2vh;
+
+    position: relative;
+    z-index: 2;
+}
+
+#logo {
+    width: 25vh;
+}
+
+button {
+    font-size: 3vh;
+    
+    width: 30vh;
+}
+
+#periodictablebutton {
+    background-color: #00a2ff;
+}
+
+#gridgamebutton {
+    color: #000;
+    background-color: #ffff00;
+}
+
+#matchgamebutton {
+    color: #000;
+    background-color: #44ff00;
+}
+
+@media screen and (max-width: 500px) {
+    #content {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    #navbar {
+        height: auto;
+        
+        padding: 0 0 5vh 0;
+    }
+}

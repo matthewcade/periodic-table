@@ -1,0 +1,278 @@
+#container {
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#question {
+    font-size: 1.5em;
+
+    margin: 5vh 0 5vh 0;
+}
+
+#elements {
+    display: grid;
+    grid-template-columns: 25vh 25vh 25vh;
+    grid-template-rows: 25vh 25vh;
+    gap: 10px;
+}
+
+.elementcontainer {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 9px;
+
+    position: relative;
+}
+
+.elementinfo {
+    width: 100%;
+    height: 100%;
+
+    padding: 0.7em;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: first baseline;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.energylevel {
+    font-size: 3vh;
+}
+
+.symbol {
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 3vh;
+}
+
+.weight {
+    font-size: 2.5vh;
+}
+
+.stategroup {
+    text-align: right;
+
+    align-self: last baseline;
+}
+
+.state {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.group {
+    font-size: 1.5vh;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.elementbutton {
+    font-size: 5vh;
+
+    color: #fff;
+    background-color: #363636;
+
+    border-radius: 9px;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.elementbutton:hover {
+    cursor: pointer;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.alkalimetal {
+    color: #d0f6f6;
+    background-color: #0e6a7c;
+}
+
+.metalloid {
+    color: #ffefd8;
+    background-color: #83510e;
+}
+
+.actinide {
+    color: #fee4d0;
+    background-color: #b53215;
+}
+
+.alkalineearthmetal {
+    color: #ffe7ea;
+    background-color: #dc1c34;
+}
+
+.reactivenonmetal {
+    color: #e1f1ff;
+    background-color: #1061d4;
+}
+
+.unknownchemicalproperties {
+    color: #e6e6e4;
+    background-color: #37363f;
+}
+
+.transitionmetal {
+    color: #f2e4ff;
+    background-color: #5239d1;
+}
+
+.noblegas {
+    color: #ffe6ef;
+    background-color: #bf2a5c;
+}
+
+.posttransitionmetal {
+    color: #dbfaeb;
+    background-color: #297058;
+}
+
+.lanthanide {
+    color: #e7f8ff;
+    background-color: #123950;
+}
+
+#generatebutton {
+    font-size: 24px;
+
+    color: #fff;
+    background-color: #0097ff;
+
+    width: 7em;
+    height: 2em;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    margin-top: 5vh;
+
+    z-index: 2;
+}
+
+#generatebutton:hover {
+    background-color: #1aa3ff;
+
+    cursor: pointer;
+}
+
+#generatebutton:active {
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#generatebutton:focus {
+    outline: none;
+}
+
+#generatebutton:active {
+    outline: none;
+}
+
+#streak {
+    font-size: 3vh;
+    padding: 2vh 0 0 0;
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 100vw;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+    
+    #question, #question span {
+        font-size: 3.5vw;
+        margin: 5vh 0;
+    }
+
+    #elements {
+        width: 100%;
+        height: 35%;
+
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: 15vh 15vh;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #generate-button {
+        margin: 0;
+    }
+
+    .energy-level {
+        font-size: 3.5vw;
+    }
+
+    .symbol {
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
+
+    .name {
+        font-size: 3.5vw;
+    }
+
+    .weight {
+        font-size: 3vw;
+    }
+
+    .state-group {
+        text-align: right;
+
+        align-self: last baseline;
+    }
+
+    .state {
+        font-size: 3.5vw;
+        font-weight: bold;
+    }
+
+    .group {
+        font-size: 2vw;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    #streak {
+        font-size: 5vw;
+
+        padding: 0 0 15em 0;
+    }
+}
